@@ -13,14 +13,31 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("👍🏼 the viewDidLoad was successful")
-        messageLabel.text = "Whoa, is that a button?"
+        messageLabel.text = "Whoa, that's a lot of buttons!"
 
     }
-
-    @IBAction func messageButtonPressed(_ sender: Any) {
-        print("👍🏼 The messageButtonPressed was successful")
-        messageLabel.text = "The button worked!"
+    @IBAction func messageButtonBlue(_ sender: Any) {
+        print("👍🏼 the messageButtonBlue was successful")
+        messageLabel.text = "Now it's all blue"
+        messageLabel.textColor = UIColor.blue
     }
+    @IBAction func messageButtonRed(_ sender: Any) {
+        print("👍🏼 the messageButtonRed was successful")
+        messageLabel.text = "Now it's all red"
+        messageLabel.textColor = UIColor.red
+    }
+    @IBAction func messageButtonOriginal(_ sender: Any) {
+        print("👍🏼 the messageButtonOriginal was successful")
+        messageLabel.text = "Whoa, that's a lot of buttons!"
+        messageLabel.textColor = UIColor.black
+        
+    }
+    
+    
+    
+    
+    
+    
     
 }
 
